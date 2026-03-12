@@ -43,7 +43,7 @@ Full subnet scan confirmed 7 active hosts.
 | iMac Lab Server | 192.168.178.78 | via Repeater | Through Repeater |
 | Device-01 | 192.168.178.106 | via Repeater | Through Repeater |
 | Device-02 | 192.168.178.112 | via Repeater | Through Repeater |
-| Device-03 | 192.168.178.97 | via Repeater | Through Repeater |
+| AMZN Firestick | 192.168.178.97 | via Repeater | Through Repeater |
 
 ## Network Topology
 ```mermaid
@@ -100,6 +100,7 @@ UFW firewall confirmed active. Default deny policy in effect.
 4. iMac running Ubuntu with UFW follows "default deny" principle — zero exposed services
 5. Device-01 IP changed between scans (.57 to .106) demonstrating dynamic DHCP assignment
 6. Only MacBook Pro connects directly to Fritz!Box — all other devices route through repeater
+7. Unknown device (192.168.178.97) identified as Amazon Fire Stick through Wireshark traffic analysis (UPnP dd.xml request + Spotify Connect traffic observed)
 
 ## Security Recommendations
 1. Disable FTP (port 21) on Fritz!Box if not actively used — replace with SFTP or SCP
