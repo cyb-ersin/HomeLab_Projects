@@ -1,4 +1,4 @@
-# Lab 2.5 — WiFi Security: WPA2 Handshake Capture & Crack Attempt
+# Lab 2 — WiFi Security: WPA2 Handshake Capture & Crack Attempt
 
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 ![Type](https://img.shields.io/badge/Type-Offensive%20%2F%20Defensive-red)
