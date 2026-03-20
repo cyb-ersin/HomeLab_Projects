@@ -8,7 +8,6 @@
 
 Hands-on networking and cybersecurity foundation labs.
 Built alongside CompTIA studies to develop practical skills in network analysis, traffic inspection, wireless security, and network defense.
-
 This repository covers **foundational skills** — the building blocks before advanced attack/defense scenarios.
 
 > Advanced scenarios continue in **Operation Crimson Gate** *(coming soon)*
@@ -25,16 +24,25 @@ This repository covers **foundational skills** — the building blocks before ad
 
 ## Network Architecture
 
-```mermaid
-graph TD
-    Internet[Internet] --> FritzBox[Fritz!Box\n192.168.178.1\nGateway]
-    FritzBox --> MacBook[MacBook Pro\n192.168.178.111\nManagement Station]
-    FritzBox --> Repeater[TP-Link RE190\nRepeater]
-    Repeater --> iMac[iMac 12,1\nLab Server\n32GB RAM · Ubuntu]
-    Repeater --> FireStick[Amazon Fire Stick\nIdentified in Lab 1]
-    Repeater --> Others[Other Devices]
-    FritzBox -.- Kali[Kali Laptop\nThinkPad X250\nPentesting]
-    FritzBox -.- Ubuntu[Ubuntu Laptop\nLinux Practice]
+```
+                        [ Internet ]
+                             |
+                    [ Fritz!Box Router ]
+                    192.168.178.1 · GW
+                    /           \
+                   /             \
+         [ MacBook Pro ]    [ TP-Link RE190 ]
+         192.168.178.111        Repeater
+         Management              /    \
+                                /      \
+                        [ iMac 12,1 ]  [ Fire Stick ]
+                        Lab Server      Identified
+                        32GB · Ubuntu   in Lab 1
+
+         - - - - - - - - - - - - - - - - - - - - -
+         [ ThinkPad X250 ]       [ Ubuntu Laptop ]
+         Kali Linux               Linux Practice
+         Pentesting
 ```
 
 ---
@@ -60,7 +68,7 @@ graph TD
 | 0 | [Network Discovery](Lab0_Network_Discovery/) | ifconfig, arp, nmap, ping | Network topology mapping, port scanning, MAC analysis, security assessment | ✅ |
 | 1 | [Wireshark Traffic Analysis](Lab1_Wireshark_Traffic_Analysis/) | Wireshark, curl, ping, nslookup | Protocol analysis (ICMP/DNS/HTTP/ARP/TLS), TCP lifecycle, JA3 fingerprinting, passive device ID | ✅ |
 | 2 | [WiFi Security](Lab2_WiFi_Security/) | aircrack-ng suite, hcxdumptool, hashcat, macchanger | WPA2 handshake capture, PMKID attack, deauth, MAC spoofing, offline cracking | ✅ |
-| 3 | Firewall & Segmentation | iptables/nftables | ACLs, traffic filtering, network zones, segmentation | 🔜 |
+| 3 | [Firewall & Segmentation](Lab3_Firewall_Segmentation/) | ufw, iptables, nmap, hydra | Host firewall, zone segmentation, log analysis, brute force detection | ✅ |
 
 ---
 
@@ -69,6 +77,7 @@ graph TD
 - **Lab 0 → Lab 1:** Unknown device (192.168.178.97) identified as Amazon Fire Stick through Wireshark passive traffic analysis (UPnP + Spotify Connect traffic)
 - **Lab 0 → Lab 1:** Repeater MAC behavior confirmed across both active scanning (nmap) and passive capture (Wireshark ARP analysis)
 - **Lab 1 → Lab 2:** Wireshark deauth frame analysis (`wlan.fc.type_subtype == 0x000c`) directly applicable to WiFi attack detection
+- **Lab 2 → Lab 3:** Brute force detection patterns (rotating SPT, fixed DPT) first observed in Wireshark, confirmed via ufw logs
 
 ---
 
@@ -86,10 +95,13 @@ graph TD
 ## Roadmap
 
 ```
-homelab-foundation          ← you are here
-└── Foundation skills complete
+homelab-foundation              ← you are here
+├── Lab 0  Network Discovery     ✅
+├── Lab 1  Wireshark Analysis    ✅
+├── Lab 2  WiFi Security         ✅
+└── Lab 3  Firewall & Seg.       ✅
 
-operation-crimson-gate-01   ← coming soon
+operation-crimson-gate-01       ← coming soon
 └── Enterprise network simulation
 ```
 
