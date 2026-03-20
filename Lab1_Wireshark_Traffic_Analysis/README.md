@@ -1,5 +1,9 @@
 # Lab 1: Wireshark Traffic Analysis
 
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Type](https://img.shields.io/badge/Type-Traffic%20Analysis%20%2F%20Passive%20Recon-blue)
+![Difficulty](https://img.shields.io/badge/Difficulty-Beginner--Intermediate-yellow)
+
 ## Objective
 Capture live network traffic, analyze core protocols (ARP, ICMP, DNS, HTTP, TLS), 
 and practice SOC-relevant traffic analysis techniques including device identification, 
@@ -285,9 +289,6 @@ to load HTML, CSS, and JS simultaneously.
 | Encryption | AES-128 | Strong |
 | Mode | GCM (Galois/Counter Mode) | Modern, secure |
 | Hash | SHA-256 | Strong |
-
-Weak ciphers like AES_128_CBC_SHA were offered for backward compatibility 
-but not selected by GitHub's server.
 
 ### JA3 / JA3S Fingerprinting
 - **JA3 Fullstring:** 771,4865,43-51
