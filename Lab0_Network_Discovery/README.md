@@ -1,5 +1,9 @@
 # Lab 0: Network Discovery & Port Analysis
 
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Type](https://img.shields.io/badge/Type-Reconnaissance%20%2F%20Defensive-blue)
+![Difficulty](https://img.shields.io/badge/Difficulty-Beginner-yellow)
+
 ## Objective
 Discover all devices on my home network, map the topology, scan for open ports, and perform a basic security assessment using command-line tools.
 
