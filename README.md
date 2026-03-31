@@ -103,8 +103,8 @@ homelab-foundation              ← completed
 └── Lab 3  Firewall & Seg.       ✅
 
 homelab_AEGIS                   ← in progress
-├── Ch.01  IDS Deployment        🔜
-├── Ch.02  SIEM Integration      🔜
+├── Ch.01  IDS Deployment        ✅
+├── Ch.02  SIEM Integration      ✅
 ├── Ch.03  Exploitation          🔜
 ├── Ch.04  Lateral Movement      🔜
 ├── Ch.05  PCAP Forensics        🔜
