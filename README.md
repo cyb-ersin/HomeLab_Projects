@@ -19,7 +19,7 @@ This repository covers **foundational skills** — the building blocks before ad
 
 - CompTIA A+ ✅
 - CompTIA Security+ ✅
-- CompTIA Network+ *(in progress)*
+- CompTIA CySA+ *(in progress)*
 
 ---
 
