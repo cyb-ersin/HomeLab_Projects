@@ -1,4 +1,4 @@
-# Homelab-foundation
+# Homelab_Foundation
 
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 ![Certs](https://img.shields.io/badge/CompTIA-A%2B%20%7C%20Sec%2B-blue)
