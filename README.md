@@ -106,7 +106,8 @@ homelab_foundation     ✅ complete
 
 
 ```
-Advanced labs continue in [Project Aegis](https://github.com/cyb-ersin/HomeLab_Project_Aegis)
+**Advanced labs continue in [Project Aegis](https://github.com/cyb-ersin/HomeLab_Project_Aegis)**
+
 ---
 
 *Started from zero. 3 exams in 5 months. Still learning, still building — every lab teaches something new.*
