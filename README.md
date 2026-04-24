@@ -96,20 +96,15 @@ This repository covers **foundational skills** — the building blocks before ad
 ## Roadmap
 
 ```
-homelab-foundation              ← completed
-├── Lab 0  Network Discovery     ✅
-├── Lab 1  Wireshark Analysis    ✅
-├── Lab 2  WiFi Security         ✅
-└── Lab 3  Firewall & Seg.       ✅
 
-homelab_AEGIS                   ← in progress
-├── Ch.01  IDS Deployment        ✅
-├── Ch.02  SIEM Integration      ✅
-├── Ch.03  Exploitation          🔜
-├── Ch.04  Lateral Movement      🔜
-├── Ch.05  PCAP Forensics        🔜
-├── Ch.06  Rule Writing          🔜
-└── Ch.07  Incident Response     🔜
+
+homelab_foundation     ✅ complete
+├── Lab 0  Network Discovery      ✅
+├── Lab 1  Wireshark Analysis     ✅
+├── Lab 2  WiFi Security          ✅
+└── Lab 3  Firewall & Seg.        ✅
+
+→ Advanced labs continue in [Project Aegis](https://github.com/cyb-ersin/HomeLab_Project_Aegis)
 ```
 
 ---
